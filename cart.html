@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Items</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <h1>The <span style="color:chocolate;"> Delicious </span> Food Items </h1>
+<div class="container">
+   
+    <div class="item">
+        <div class="item-img">
+            <img src="images/dosa.jpg" alt="item-img">
+        </div>
+        <h3>Plain Dosa</h3>
+        <div class="item-cost">
+        <p>$10</p>
+        <ion-icon name="cart" id="add-btn" onclick="add('Plain Dosa',10)"></ion-icon>
+        </div>
+
+    </div>
+    <div class="item" id="item-change-1">
+        <div class="item-img">
+            <img src="images/Idly.jpg" alt="item-img">
+        </div>
+        <h3>Flower Idly</h3>
+        <div class="item-cost">
+            <p>$15</p>
+            <ion-icon name="cart" id="add-btn" onclick="add('Flower Idly',15)"></ion-icon>
+        </div>
+
+    </div>
+    <div class="item" id="item-change-2">
+        <div class="item-img">
+            <img src="images/pongal.jpg" alt="item-img">
+        </div>
+        <h3>Pongal</h3>
+        <div class="item-cost">
+            <p>$20</p>
+            <ion-icon name="cart" id="add-btn" onclick="add('Pongal',20)"></ion-icon>
+        </div>
+
+    </div>
+    <div class="item" >
+        <div class="item-img">
+            <img src="images/puri.jpg" alt="item-img">
+        </div>
+        <h3>Poori</h3>
+        <div class="item-cost">
+            <p>$15</p>
+            <ion-icon name="cart" id="add-btn" onclick="add('Poori',15)"></ion-icon> 
+        </div>
+
+    </div>
+    <div class="item" id="item-change-1">
+        <div class="item-img">
+            <img src="images/noodles.jpg" alt="item-img">
+        </div>
+        <h3>Noodles</h3>
+        <div class="item-cost">
+            <p>$20</p>
+            <ion-icon name="cart" id="add-btn" onclick="add('Noodles',20)"></ion-icon>
+        </div>
+
+    </div>
+    <div class="item" id="item-change-2">
+        <div class="item-img">
+            <img src="images/briyani.jpg" alt="item-img">
+        </div>
+        <h3>Hyderabadi Briyani</h3>
+        <div class="item-cost">
+            <p>$30</p>
+            <ion-icon name="cart" id="add-btn" onclick="add('Hydrabadi Briyani',30)"></ion-icon>
+        </div>
+
+    </div>
+</div>
+
+    <div class="add-to-cart">
+        <p>Items In Cart:</p>
+        <ul id="list-item">
+
+        </ul>
+        <h3 id="total">
+            Total Cost:
+        </h3>
+        <button type="reset" id="reload">Reset</button>
+
+    </div>
+    
+</body>
+</html>
